@@ -2,7 +2,7 @@ $accent:#D7B399;
 $dark: #212121;
 $light: #F9F6F1;
 $black: #000000;
-$yellow: #FED50B;
+$yellow: #FFBE02;
 
 *{
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body{
   }
 
   &-yellow{
-    background-color: #FED50B;
+    background-color: $yellow;
     background-size: contain;
     height: 250px;
     margin-top: 50px;
@@ -67,9 +67,10 @@ body{
 }
 
 .logo{
-  text-shadow: 3px 3px 3px #000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  border: 1px solid black;
+  text-shadow: 2px 2px 2px #000;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: rgb(0, 0, 0);
   color: $light;
   background-color: $light;
   margin-right: 50px;
@@ -95,7 +96,8 @@ body{
     padding-bottom: 10px;
     padding-left: 15px;
     border-radius: 30px;
-    text-shadow: 3px 3px 3px #000;
+    border: 1px solid black;
+    text-shadow: 2px 2px 2px #000;
     &-item{
       margin-right: 30px;
     }
@@ -105,8 +107,8 @@ body{
 .nav-link{
     text-decoration: none;
     color: $light;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
+    // -webkit-text-stroke-width: 1px;
+    // -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .telphone{
@@ -133,8 +135,8 @@ body{
   font-size: 64px;
   color: $light;
   font-weight: 500;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  // -webkit-text-stroke-width: 2px;
+  // -webkit-text-stroke-color: rgb(0, 0, 0);
   text-shadow: 3px 3px 3px #000;
 }
 
@@ -154,6 +156,7 @@ body{
   font-size: 32px;
   background-color: $light;
   border-radius: 30px;
+  border: 1px solid black;
   text-decoration: none;
   padding: 12px 70px;
   color: $light;
@@ -161,9 +164,9 @@ body{
   background-repeat: no-repeat;
   background-position: 260px;
   padding-left: 45px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
-  text-shadow: 3px 3px 3px #000;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px #000;
 }
 
 .social{
@@ -173,7 +176,7 @@ body{
   position: absolute;
   top: 850px;
   margin-right: 20px;
-  text-shadow: 3px 3px 3px #000;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .right{
@@ -271,7 +274,7 @@ body{
 }
 
 .informBlock:hover {
-  background: #FED50B;
+  background: $yellow;
 }
 
 .informBlock:hover .underlineBlock{
@@ -317,7 +320,7 @@ body{
 }
 
 .frap{
-  box-shadow: 0 20px 10px rgb(255, 196, 0);
+  box-shadow: 0 20px 10px $yellow;
   display: inline-block;
   // width: 27%;
   // position: absolute;
@@ -370,7 +373,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    background-color: #FED50B;
+    background-color: $yellow;
     background-size: contain;
     padding-bottom: 40px;
     // width: 100%;
@@ -400,6 +403,7 @@ body{
   padding-right: 20px;
   margin-left: auto;
   color: $light;
+  text-shadow: 2px 2px 2px #000;
   text-align: center;
 }
 
@@ -444,7 +448,40 @@ padding-left: 27px;
   // padding-top: -10px;
   // margin-left: auto;
   color: $light;
+  text-shadow: 2px 2px 2px #000;
   text-align: center;
+}
+
+.wrp {
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+.map-box { 
+  border-radius: 50%;
+	position: absolute;
+	top: 80px;
+	left: -130px; 
+	padding: 20px;
+	background: $yellow;
+	border: 1px solid $black;
+	z-index: 100;
+  height: 300px;
+	width: 300px;
+	box-shadow: -1px -1px 24px 10px rgba(50, 50, 50, 0.5);
+}
+.map-box p {
+  color: $light;
+  text-shadow: 2px 2px 2px #000;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: rgb(0, 0, 0);
+  padding: 30px 25px 30px 30px;
+  text-align: center;
+	font-size: 20px;
+}
+#map {
+	width: 100%; 
+	height: 350px;
 }
 
 
