@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZooHelp</title>
-
+  
     <!--ШРИФТЫ -->
 
+    <!-- <script src="js/main.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
     <!-- ССЫЛКИ -->
-
+     
     <link rel="stylesheet" href="https://cdnout.com/normalize/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <div class = "page page-light">
       <div class="dogie">
@@ -33,9 +35,9 @@
 
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="">О нас</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Услуги</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Конаткты</a></li>
+                    <li class="nav-item"><a href="#pagelight" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#pageuslugi" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#pagefooter" class="nav-link">Конаткты</a></li>
                 </ul>
             </nav>
 
@@ -50,8 +52,44 @@
             <div class="left-menu">
               <h1 class="info-title"> Ваш пушистый друг, <br /> скажет нам спасибо! </h1>
               <p class="info"> И не только пушиcтый :)</p>
-              <a class = "btn" href=""> Запись на приём </a>
+          
+                <button id="myBtn" class="btn"> Запись на приём </button>
+                <div id="mypopup" class="popup">
+                    <div class="popup-content">
+                      <span class="close">&times;</span>
+                      <h2>Запись на приём к врачу</h2>
+                      <input type="text" name="name" value="" placeholder="Ваше ФИО"> <br>
+                      <input type="text" name="phone" value="" placeholder="Контактный телефон"> <br>
+                      <button> Записаться </button>
+                      <p>Запись на прием возможна только по телефону. Оставьте ваши <br>
+                           контактные данные, и мы вам перезвоним в течении 10 минут!</p>
+
+                      <p>Нажимая на кнопку "Записаться на прием" Вы соглашаетесь с <span class="pop"> правилами <br>
+                         обработки персональных данных </span>  и с тем, что Вам уже есть 18 лет.</p>
+                    </div>
+                </div>
             </div>
+
+            <script>
+            let popup = document.getElementById("mypopup"),
+              popupToggle = document.getElementById ("myBtn"),
+              popupClose = document.querySelector(".close");
+
+              popupToggle.onclick = function() {
+                popup.style.display="block";
+              };
+
+              popupClose.onclick = function() {
+                popup.style.display="none";
+              }
+
+              window.onclick = function (e) {
+                if (e.target == popup) {
+                  popup.style.display="none";
+                }
+              }
+
+            </script>
 
             <div class="social">
               <p><b>Подписывайтесь в соцсетях ! </b></p>
@@ -65,8 +103,10 @@
       </div>
     </div>
 
-    <div class="page page-white">
+          <!-- О НАС -->
 
+  <div id="pagelight">
+    <div class="page page-white">
       <img src="img/dog1.svg" alt="" class="dog1">
       <img src="img/dog2.svg" alt="" class="dog2">
 
@@ -77,11 +117,12 @@
           ветеринары
           </p>
     </div>
+  </div>
 
-                                  <!-- TEXT-PAGE -->
+                                  <!-- USLUGI -->
     
+    <div id="pageuslugi">                       
     <div class="page page-yellow">
-      
       <h1 class="uslugi">Наши услуги:</h1>
 
         <div class="wrap">
@@ -107,6 +148,9 @@
           </div>
         </div>
       </div>
+    </div>     
+
+                              <!-- INFOCLASS -->
 
       <div class="infoclass">
         <div class="frap frap-barleft">  
@@ -200,8 +244,8 @@
     </div>
  
      
-                <!-- KARTA -->
-                
+                <!-- FOOTER -->
+<div id="pagefooter">
 <div class="map"> 
   <div class="wrp">
     <div class="map-box">
@@ -217,8 +261,8 @@
     </div>
   </div>
 </div>
-
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae12070e335a6d1cc079b8622dfe0d21d26f42a3beab3fed950f1d6173e7d1ce9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
 
 <div class="footer">
     <img class="lapka" src="img/whitelapka.svg" alt="">

@@ -140,6 +140,66 @@ body {
   text-shadow: 2px 2px 2px #000;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #D7B399;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 95%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-content {
+  position: relative;
+  background-color: #F9F6F1;
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  width: 80%;
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 300px;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 300px;
+    opacity: 1;
+  }
+}
+
 .social {
   color: #F9F6F1;
   font-weight: 400;
@@ -252,7 +312,8 @@ body {
 .infoclass {
   display: flex;
   justify-content: center;
-  margin-left: 350px;
+  margin-left: 80px;
+  margin-right: auto;
   max-width: 1200px;
   padding-left: 10px;
   margin-top: 450px;
