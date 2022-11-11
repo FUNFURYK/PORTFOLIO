@@ -153,7 +153,13 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.pop {
+  list-style-type: none;
+  color: blue;
+}
+
 .close {
+  padding-top: 10px;
   color: #000;
   font-size: 28px;
   font-weight: bold;
@@ -168,16 +174,18 @@ body {
 }
 
 .popup-content {
+  border-radius: 7%;
   position: relative;
   background-color: #F9F6F1;
-  margin: auto;
-  padding: 0;
+  margin-top: 150px;
+  margin-left: 100px;
+  padding-left: 10px;
   border: 1px solid black;
-  width: 80%;
+  width: 40%;
   -webkit-animation-name: animatetop;
           animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 @-webkit-keyframes animatetop {
   from {
@@ -185,7 +193,7 @@ body {
     opacity: 0;
   }
   to {
-    top: 300px;
+    top: 100px;
     opacity: 1;
   }
 }
@@ -195,9 +203,13 @@ body {
     opacity: 0;
   }
   to {
-    top: 300px;
+    top: 100px;
     opacity: 1;
   }
+}
+
+.popup-content p {
+  font-size: 15px;
 }
 
 .social {
