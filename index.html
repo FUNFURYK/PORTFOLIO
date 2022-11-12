@@ -8,8 +8,7 @@
     <title>ZooHelp</title>
   
     <!--ШРИФТЫ -->
-
-    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="/main.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
@@ -52,14 +51,19 @@
             <div class="left-menu">
               <h1 class="info-title"> Ваш пушистый друг, <br /> скажет нам спасибо! </h1>
               <p class="info"> И не только пушиcтый :)</p>
-          
+
+
+                                      <!-- МОДАЛЬНОЕ ОКНО -->
                 <button id="myBtn" class="btn"> Запись на приём </button>
                 <div id="mypopup" class="popup">
                     <div class="popup-content">
                       <span class="close">&times;</span>
-                      <h2>Запись на приём к врачу</h2>
-                      <input type="text" name="name" value="" placeholder="Ваше ФИО"> <br>
-                      <input type="text" name="phone" value="" placeholder="Контактный телефон"> <br>
+                      <h1 class="poph1">Запись на приём к врачу</h1>
+                    
+                      <input class="input" type="text" name="name" value="" placeholder="Ваше ФИО">
+                     
+                        <input class="input" type="text" name="name" value="" placeholder="Контактный телефон">
+                        <br>
                       <button> Записаться </button>
                       <p>Запись на прием возможна только по телефону. Оставьте ваши <br>
                            контактные данные, и мы вам перезвоним в течении 10 минут!</p>
@@ -76,25 +80,7 @@
               <img src="img/inst.svg" alt="">
               <img src="img/yt.svg" alt="">
             </div>
-            <script>
-            let popup = document.getElementById("mypopup"),
-              popupToggle = document.getElementById ("myBtn"),
-              popupClose = document.querySelector(".close");
-
-              popupToggle.onclick = function() {
-                popup.style.display="block";
-              };
-
-              popupClose.onclick = function() {
-                popup.style.display="none";
-              }
-
-              window.onclick = function (e) {
-                if (e.target == popup) {
-                  popup.style.display="none";
-                }
-              }
-            </script>
+            <script src="scripts/main.js"></script>
           </div>
         </div>
       </div>

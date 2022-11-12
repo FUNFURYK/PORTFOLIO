@@ -153,8 +153,16 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.poph1 {
+  background-image: url(../img/blacklapa.svg);
+  background-repeat: no-repeat;
+  background-position: 310px;
+  margin-top: -5px;
+  padding-left: 0px;
+  margin-left: 40px;
+}
+
 .pop {
-  list-style-type: none;
   color: blue;
 }
 
@@ -163,6 +171,7 @@ body {
   color: #000;
   font-size: 28px;
   font-weight: bold;
+  margin-top: 50%;
   margin-left: 95%;
 }
 
@@ -171,15 +180,28 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 40px;
+}
+
+.input.input {
+  font-size: 26px;
+  height: 63px;
+  width: 430px;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
 }
 
 .popup-content {
+  height: 420px;
+  width: 700px;
+  align-items: center;
   border-radius: 7%;
   position: relative;
   background-color: #F9F6F1;
   margin-top: 150px;
   margin-left: 100px;
-  padding-left: 10px;
+  padding-left: 40px;
   border: 1px solid black;
   width: 40%;
   -webkit-animation-name: animatetop;
