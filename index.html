@@ -23,7 +23,7 @@
 <body>
     <div class = "page page-light">
       <div class="dogie">
-    <div class ="wrapper">
+    <!-- <div class ="wrapper"> -->
      
 
                       <!-- HEADER -->
@@ -39,10 +39,24 @@
                     <li class="nav-item"><a href="#pagefooter" class="nav-link">Конаткты</a></li>
                 </ul>
             </nav>
-
-            <div class="nav">
-                <span class="telphone"><a class="nav-link" href="">Показать телефон</a>
-            </div>
+                                <!-- ОКНО ПОКАЗАТЬ ТЕЛЕФОН -->
+                          
+               <button id="phnbtn" class="btnphone"> Показать телефон </button>
+               <div id="phnpopup" class="pupip">
+                   <div class="popup-phone-content">
+                     <span class="closed">&times;</span>
+                     <h1 class="ph2">ZooHelp</h1>
+                      <p> <img src="img/image 8.png"> +7-919-787-51-05</p>
+                      <p> <img src="img/image 8.png"> +7-800-555-35-35</p>
+                      <p> <img src="img/image 8.png"> +7-222-333-44-55</p>
+                      <p class="pbtn">Вы дозвонились?</p>
+                     <button class="phbn"> Да </button> 
+                     <button class="phbn"> Нет </button> 
+                     <button class="phbnbottom"> Не взяли трубку </button>
+                   </div> 
+                   <script src="scripts/popup-phone.js"></script>
+               </div>
+           <!-- </div> -->
         </header>   
 
                        <!-- MAIN -->
@@ -52,8 +66,7 @@
               <h1 class="info-title"> Ваш пушистый друг, <br /> скажет нам спасибо! </h1>
               <p class="info"> И не только пушиcтый :)</p>
 
-
-                                      <!-- МОДАЛЬНОЕ ОКНО -->
+                                      <!-- МОДАЛЬНОЕ ОКНО ЗАПИСЬ -->
                 <button id="myBtn" class="btn"> Запись на приём </button>
                 <div id="mypopup" class="popup">
                     <div class="popup-content">
@@ -62,8 +75,8 @@
                     
                       <input class="input" type="text" name="name" value="" placeholder="Ваше ФИО">
                      
-                        <input class="input" type="text" name="name" value="" placeholder="Контактный телефон">
-                        <br>
+                      <input class="input" type="text" name="name" value="" placeholder="Контактный телефон">
+                      <br>
                       <button> Записаться </button>
                       <p>Запись на прием возможна только по телефону. Оставьте ваши <br>
                            контактные данные, и мы вам перезвоним в течении 10 минут!</p>
@@ -71,8 +84,10 @@
                       <a>Нажимая на кнопку "Записаться на прием" Вы соглашаетесь с <span class="pop"><a href="#"> правилами <br>
                          обработки персональных данных </span></a>  и с тем, что Вам уже есть 18 лет.</p>
                     </div>
+                    <script src="scripts/main.js"></script>
                 </div>
             </div>
+                                        <!-- ИКОНКИ ГЛАВНАЯ СТР -->
             <div class="social">
               <p><b>Подписывайтесь в соцсетях ! </b></p>
               <img src="img/facebook.svg" alt="">
@@ -80,7 +95,6 @@
               <img src="img/inst.svg" alt="">
               <img src="img/yt.svg" alt="">
             </div>
-            <script src="scripts/main.js"></script>
           </div>
         </div>
       </div>
@@ -88,11 +102,10 @@
 
           <!-- О НАС -->
 
-  <div id="pagelight">
-    <div class="page page-white">
+    <div id="pagelight" class="page page-white">
       <img src="img/dog1.svg" alt="" class="dog1">
       <img src="img/dog2.svg" alt="" class="dog2">
-
+    
       <h1 class="text text-up">Возвращаем вашим питомцам здоровье <br> и радость!</h1>
         <p class="text text-bottom">ZooHelp - одна из крупнейших ветклиник в России. <br>
           Наша клиника оснащена самой современной медицинской техникой, <br>
@@ -100,7 +113,6 @@
           ветеринары
           </p>
     </div>
-  </div>
 
                                   <!-- USLUGI -->
     
