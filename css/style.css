@@ -3,6 +3,8 @@
 }
 
 body {
+  overflow: auto;
+  width: 100%;
   font-family: "Neucha", cursive;
 }
 
@@ -10,6 +12,9 @@ body {
   background-color: #FFBE02;
   height: 1000px;
   box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+  background-image: url(../img/dog.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .page-yellow {
   box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
@@ -33,19 +38,9 @@ body {
   margin: 0 auto;
 }
 
-.dogie {
-  background-image: url(../img/dog.png);
-  position: static;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  height: 100%;
-  width: 0 auto;
-}
-
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -68,6 +63,7 @@ body {
 }
 
 .nav {
+  max-width: 1700px;
   display: flex;
   list-style-type: none;
   padding-left: 0px;
@@ -99,11 +95,13 @@ body {
 }
 
 .main {
-  width: 0 auto;
-  margin-top: 151px;
-  margin-left: 111px;
-  display: inline-block;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin-left: -700px;
+}
+
+.left-menu {
+  margin-top: 81px;
 }
 
 .info-title {
@@ -138,19 +136,6 @@ body {
   text-shadow: 2px 2px 2px #000;
 }
 
-.pupip {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #D7B399;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .closed {
   color: #000;
   font-size: 28px;
@@ -163,6 +148,19 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.pupip {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #D7B399;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .popup-phone-content {
@@ -223,13 +221,34 @@ body {
   padding: 20px;
 }
 
-.phbn {
-  width: 120px;
-  height: 30px;
+.phbnbottom {
+  font-size: 24px;
+  width: 320px;
+  height: 40px;
   padding: 5px 5px 10px 5px;
   border-radius: 30px;
-  margin-left: 35px;
+  margin-left: 15px;
   margin-top: 10px;
+}
+
+.phbn {
+  font-size: 24px;
+  width: 150px;
+  height: 40px;
+  padding: 5px 5px 10px 5px;
+  border-radius: 30px;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+.but {
+  font-size: 24px;
+  width: 150px;
+  height: 40px;
+  padding: 5px 5px 10px 5px;
+  border-radius: 30px;
+  margin-left: 0px;
+  margin-top: 5px;
 }
 
 .btn {
@@ -301,13 +320,13 @@ body {
 }
 
 .popup-content {
-  height: 420px;
+  height: 520px;
   width: 700px;
   align-items: center;
   border-radius: 7%;
   position: relative;
   background-color: #F9F6F1;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 100px;
   padding-left: 40px;
   border: 1px solid black;
@@ -333,6 +352,7 @@ body {
 }
 
 .social {
+  align-items: center;
   color: #F9F6F1;
   font-weight: 400;
   font-size: 28px;
@@ -408,6 +428,7 @@ body {
 }
 
 .informBlock {
+  background-color: #F9F6F1;
   border: 2px solid #212121;
   padding: 10px;
   transition: 1s;
@@ -443,14 +464,10 @@ body {
   border-color: #000000;
 }
 
-.infoclass {
-  max-width: 1700px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0px;
-  margin-right: auto;
+.class {
   margin-top: 450px;
+  display: flex;
+  justify-content: center;
 }
 
 .frap {
@@ -464,6 +481,7 @@ body {
 }
 .frap-barleft {
   padding-right: 10px;
+  padding-bottom: 20px;
 }
 .frap-barright {
   margin-left: 100px;

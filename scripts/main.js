@@ -16,8 +16,4 @@ let popup = document.getElementById("mypopup"),
       popup.style.display="none";
     }
   }
-
-
-
-
   

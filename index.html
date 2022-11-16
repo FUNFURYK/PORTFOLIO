@@ -2,159 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZooHelp</title>
-  
-    <!--ШРИФТЫ -->
-    <!-- <script src="/main.js"></script> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
-    <!-- ССЫЛКИ -->
-     
-    <link rel="stylesheet" href="https://cdnout.com/normalize/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZooHelp</title>
+  <!--ШРИФТЫ -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+  <!-- ССЫЛКИ -->
+
+  <link rel="stylesheet" href="https://cdnout.com/normalize/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="path/to/lightbox.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class = "page page-light">
-      <div class="dogie">
+  <div class="page page-light">
     <!-- <div class ="wrapper"> -->
-     
 
-                      <!-- HEADER -->
 
-         <header class="header">
+    <!-- HEADER -->
+    <header class="header">
 
-          <li class="logo">ZooHelp</li>
+      <li class="logo">ZooHelp</li>
 
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#pagelight" class="nav-link">О нас</a></li>
-                    <li class="nav-item"><a href="#pageuslugi" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="#pagefooter" class="nav-link">Конаткты</a></li>
-                </ul>
-            </nav>
-                                <!-- ОКНО ПОКАЗАТЬ ТЕЛЕФОН -->
-                          
-               <button id="phnbtn" class="btnphone"> Показать телефон </button>
-               <div id="phnpopup" class="pupip">
-                   <div class="popup-phone-content">
-                     <span class="closed">&times;</span>
-                     <h1 class="ph2">ZooHelp</h1>
-                      <p> <img src="img/image 8.png"> +7-919-787-51-05</p>
-                      <p> <img src="img/image 8.png"> +7-800-555-35-35</p>
-                      <p> <img src="img/image 8.png"> +7-222-333-44-55</p>
-                      <p class="pbtn">Вы дозвонились?</p>
-                     <button class="phbn"> Да </button> 
-                     <button class="phbn"> Нет </button> 
-                     <button class="phbnbottom"> Не взяли трубку </button>
-                   </div> 
-                   <script src="scripts/popup-phone.js"></script>
-               </div>
-           <!-- </div> -->
-        </header>   
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#pagelight" class="nav-link" onclick="slowScroll('#pagelight')">О нас</a></li>
+          <li class="nav-item"><a href="#pageuslugi" class="nav-link">Услуги</a></li>
+          <li class="nav-item"><a href="#pagefooter" class="nav-link">Конаткты</a></li>
+        </ul>
+      </nav>
 
-                       <!-- MAIN -->
+      <!-- МОДАЛЬНОЕ ОКНО ПОКАЗАТЬ ТЕЛЕФОН -->
+      <button id="phnbtn" class="btnphone"> Показать телефон </button>
+      <div id="phnpopup" class="pupip">
+        <div class="popup-phone-content">
+          <span class="closed">&times;</span>
+          <h1 class="ph2">ZooHelp</h1>
+          <p> <img src="img/image 8.png"> +7-919-787-51-05</p>
+          <p> <img src="img/image 8.png"> +7-800-555-35-35</p>
+          <p> <img src="img/image 8.png"> +7-222-333-44-55</p>
+          <p class="pbtn">Вы дозвонились?</p>
+          <button class="phbn" onclick="alert('Мы очень рады!');">Да</button>
+          <button class="phbn" onclick="alert('Попробуйте еще раз!');"> Нет </button>
+          <button class="phbnbottom" onclick="alert('Напишите нам в WhatsUpp +79197875105');">Не взяли трубку </a></button>
+        </div>
+        <script src="scripts/popup-phone.js"></script>
+      </div>
+    </header>
 
-          <div class="main"> 
-            <div class="left-menu">
-              <h1 class="info-title"> Ваш пушистый друг, <br /> скажет нам спасибо! </h1>
-              <p class="info"> И не только пушиcтый :)</p>
+    <!-- ГЛАВНАЯ СТРАНИЦА -->
+    <div class="main">
+      <div class="lmenu">
+        <div class="left-menu">
+          <h1 class="info-title"> Ваш пушистый друг, <br /> скажет нам спасибо! </h1>
+          <p class="info"> И не только пушиcтый :)</p>
 
-                                      <!-- МОДАЛЬНОЕ ОКНО ЗАПИСЬ -->
-                <button id="myBtn" class="btn"> Запись на приём </button>
-                <div id="mypopup" class="popup">
-                    <div class="popup-content">
-                      <span class="close">&times;</span>
-                      <h1 class="poph1">Запись на приём к врачу</h1>
-                    
-                      <input class="input" type="text" name="name" value="" placeholder="Ваше ФИО">
-                     
-                      <input class="input" type="text" name="name" value="" placeholder="Контактный телефон">
-                      <br>
-                      <button> Записаться </button>
-                      <p>Запись на прием возможна только по телефону. Оставьте ваши <br>
-                           контактные данные, и мы вам перезвоним в течении 10 минут!</p>
+          <!-- МОДАЛЬНОЕ ОКНО ЗАПИСЬ -->
+          <button id="myBtn" class="btn"> Запись на приём </button>
+          <div id="mypopup" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <h1 class="poph1">Запись на приём к врачу</h1>
 
-                      <a>Нажимая на кнопку "Записаться на прием" Вы соглашаетесь с <span class="pop"><a href="#"> правилами <br>
-                         обработки персональных данных </span></a>  и с тем, что Вам уже есть 18 лет.</p>
-                    </div>
-                    <script src="scripts/main.js"></script>
-                </div>
+              <input class="input" type="text" name="name" value="" placeholder="Ваше ФИО">
+
+              <input class="input" type="text" name="FIO" value="" placeholder="Контактный телефон">
+              <br>
+              <!-- ДОБАВИТЬ ВЫПАДАЮЩИЙ СПИСОК С ДАТАМИ -->
+              <label for="datetime">Выберите дату и время:</label>
+              <input id="datetime" class="input" type="datetime-local" name="datetime" min="2022-11-01" max="2023-12-01">
+
+              <button class="but" onclick="alert('Вы успешно записаны на приём!');"> Записаться </button>
+              <p>Запись на прием возможна только по телефону. Оставьте ваши <br>
+                контактные данные, и мы вам перезвоним в течении 10 минут!</p>
+
+              <a>Нажимая на кнопку "Записаться на прием" Вы соглашаетесь с <span class="pop"><a href="https://www.consultant.ru/document/cons_doc_LAW_61801/"> правилами <br>
+                    обработки персональных данных </span></a> и с тем, что Вам уже есть 18 лет.</p>
             </div>
-                                        <!-- ИКОНКИ ГЛАВНАЯ СТР -->
-            <div class="social">
-              <p><b>Подписывайтесь в соцсетях ! </b></p>
-              <img src="img/facebook.svg" alt="">
-              <img src="img/vk.svg " alt="">
-              <img src="img/inst.svg" alt="">
-              <img src="img/yt.svg" alt="">
-            </div>
+            <script src="scripts/main.js"></script>
           </div>
+        </div>
+        <!-- ИКОНКИ ГЛАВНАЯ СТР -->
+        <div class="social">
+          <p><b>Мы в соцсетях ! </b></p>
+          <a href="https://skobelkin.ru/whatsapp/79197875105?text=Вы+не+дозвонились?+Напишите+нам+в+WhatsUpp+:)"></a><img src="img/whts.svg" alt=""></a>
+          <a href="https://vk.com/funfuryyk"><img src="img/vk.svg " alt=""></a>
+          <a href="https://www.instagram.com/funfuryyk/"><img src="img/inst.svg" alt=""></a>
+          <a href="https://www.youtube.com/channel/UC-sMJ8vWKFlt5tZ_SQGsNgw"><img src="img/yt.svg" alt=""></a>
         </div>
       </div>
     </div>
+  </div>
 
-          <!-- О НАС -->
+  <!-- О НАС -->
+  <div id="pagelight" class="page page-white">
+    <img src="img/dog1.svg" alt="" class="dog1">
+    <img src="img/dog2.svg" alt="" class="dog2">
 
-    <div id="pagelight" class="page page-white">
-      <img src="img/dog1.svg" alt="" class="dog1">
-      <img src="img/dog2.svg" alt="" class="dog2">
-    
-      <h1 class="text text-up">Возвращаем вашим питомцам здоровье <br> и радость!</h1>
-        <p class="text text-bottom">ZooHelp - одна из крупнейших ветклиник в России. <br>
-          Наша клиника оснащена самой современной медицинской техникой, <br>
-          оборудована стационаром, а Ваших животных вылечат наши опытные <br> 
-          ветеринары
-          </p>
-    </div>
+    <h1 class="text text-up">Возвращаем вашим питомцам здоровье <br> и радость!</h1>
+    <p class="text text-bottom">ZooHelp - одна из крупнейших ветклиник в России. <br>
+      Наша клиника оснащена самой современной медицинской техникой, <br>
+      оборудована стационаром, а Ваших животных вылечат наши опытные <br>
+      ветеринары
+    </p>
+  </div>
 
-                                  <!-- USLUGI -->
-    
-    <div id="pageuslugi">                       
+  <!-- USLUGI -->
+
+  <div id="pageuslugi">
     <div class="page page-yellow">
       <h1 class="uslugi">Наши услуги:</h1>
 
-        <div class="wrap">
-          <div class="informBlock">
-              <h3 class="mainText">Лечение кошек</h3>
-              <div class="underlineBlock">
-                <img src="img/cat1.png" alt="">
-              </div> 
+      <div class="wrap">
+        <div class="informBlock">
+          <h3 class="mainText">Лечение кошек</h3>
+          <div class="underlineBlock">
+            <img src="img/cat1.png" alt="">
           </div>
+        </div>
 
-          <div class="informBlock">
-             <h3 class="mainText">Лечение собак</h3>
-             <div class="underlineBlock">
-               <img src="img/cat2.png" alt="" >
-             </div>
-         </div>
+        <div class="informBlock">
+          <h3 class="mainText">Лечение собак</h3>
+          <div class="underlineBlock">
+            <img src="img/cat2.png" alt="">
+          </div>
+        </div>
 
-         <div class="informBlock">
-           <h3 class="mainText">Лечение других животных</h3>
-           <div class="underlineBlock">
-             <img src="img/cat3.png" alt="" >
-           </div>
+        <div class="informBlock">
+          <h3 class="mainText">Лечение других животных</h3>
+          <div class="underlineBlock">
+            <img src="img/cat3.png" alt="">
           </div>
         </div>
       </div>
-    </div>     
+    </div>
+  </div>
 
-                              <!-- INFOCLASS -->
-
-      <div class="infoclass">
-        <div class="frap frap-barleft">  
+  <!-- INFOCLASS -->
+  <div class="class">
+    <div class="infoclass">
+      <div class="frap frap-barleft">
         <h1 class="h1-bar">Преимущества <br> вызова ветеринара <br> на дом</h1>
-        <p> <span class="bartext"> Вызывная ветслужба </span> - это отличная альтернатива <br> 
+        <p> <span class="bartext"> Вызывная ветслужба </span> - это отличная альтернатива <br>
           обращения с питомцем в клинику. <br>
           Приезд ветеринара на дом имеет следующие преимущества:</p>
 
-        <p > <span class="bartext"> Экономия времени </span> на транспортировку питомца <br>
+        <p> <span class="bartext"> Экономия времени </span> на транспортировку питомца <br>
           в клинику и обратно, ожидание своей очереди. <br>
           Даже предварительная запись к врачу не дает гарантии, <br>
           что питомца примут в точно назначенное время. </p>
@@ -169,102 +168,105 @@
           даже ночью или в праздничные дни.</p>
 
         <p> <span class="bartext"> Минимум стресса для домашнего любимца.</span> <br>
-           Если животное плохо себя чувствует, смена обстановки <br> 
-           не пойдет ему на пользу. Осмотр и проведение процедур <br>
-           будет проводиться в привычных условиях, что позволит <br>
-           спокойнее перенести лечение.</p>
+          Если животное плохо себя чувствует, смена обстановки <br>
+          не пойдет ему на пользу. Осмотр и проведение процедур <br>
+          будет проводиться в привычных условиях, что позволит <br>
+          спокойнее перенести лечение.</p>
 
-          <p> <span class="bartext"> Минимум стресса для домашнего любимца.</span> <br>
-             Если животное плохо себя чувствует, смена обстановки <br> 
-             не пойдет ему на пользу. Осмотр и проведение процедур <br>
-             будет проводиться в привычных условиях, что позволит <br>
-             спокойнее перенести лечение.</p>
-        </div>
-
-
-        <div class="frap frap-barright">
-
-         <h1 class="h2-bar"> Услуги <br> проводимые <br> на дому</h1>
-          <p><span class="bartext">На дому ветеринары оказывают все те же услуги, <br> что и в клинике.</span><br>
-            Исключениями являются только операции и исследования, <br>
-            требующие стационарного оборудования.</p>
-          <p><span class="bartext">Экстренная помощь.</span> Бригады скорой ветеринарной <br>
-            помощи и их транспорт оборудованы всем <br>
-           необходимым для оказания срочной помощи и <br>
-           реанимации.</p>
-          <p><span class="bartext">Диагностика и анализы.</span> Современное портативное <br>
-            оборудование сделало возможным проводить дома <br>
-            многие виды аппаратной диагностики - УЗИ, ЭКГ, <br>
-            рентген. Мы сотрудничаем с лучшими лабораториями. <br>
-            Ветврач произведет забор материалов, а результаты <br>
-            вы получите по электронной почте.</p>
-          <p><span class="bartext">Терапевтическое лечение.</span> Большинство проблем с <br>
-            животными могут быть решены с помощью <br>
-            медикаментов и процедур в домашних условиях. Так <br> 
-            питомцы чувтсвуют себя в безопаности и не <br>
-            испытывают стресса. Если потребуется, на дом может <br>
-             выехать и узкий специалист: офтальмолог, дерматолог, <br>
-            кардиолог и т.д.</p>
-          <p><span class="bartext">Хирургия.</span> В домашних условиях, конечно, нет возможности <br>
-            проводить большинство операций, но наши доктора окажут <br>
-            вашему питомцу первую помощь при травмах; при <br>
-            необходимости подготовят его к транспортировке <br>
-            и доставят в стационар.
-            </p>
-        </div>
+        <p> <span class="bartext"> Минимум стресса для домашнего любимца.</span> <br>
+          Если животное плохо себя чувствует, смена обстановки <br>
+          не пойдет ему на пользу. Осмотр и проведение процедур <br>
+          будет проводиться в привычных условиях, что позволит <br>
+          спокойнее перенести лечение.</p>
       </div>
-                                 <!-- ICONS -->
 
-      <div class="page-ics">
-        <div class="page-icons">
-        <img class="img-pig" src="img/pig.svg" alt="">
-        <p class="icon-title">Доступные <br> цены</p>
-     </div>
-     <div class="page-icons">
-         <img class="img-icon" src="img/chasi.svg" alt="">
-         <p class="icon-title">Обслуживание <br> 24 часа</p>
-     </div>
-     <div class="page-icons">
-       <img class="img-icon" src="img/vrach.svg" alt="">
-       <p class="icon-title">Персональный <br> врач </p>
-     </div>
-     <div class="page-icons">
-       <img class="img-icon" src="img/krest.svg" alt="">
-       <p class="icon-title">Новое <br> оборудование</p>
-     </div>
-     <div class="page-icon-gazel">
-         <img class="img-icon-gazel" src="img/gazel.svg" alt="">
-         <p class="icon-title-gazel">Выезд <br> на дом </p>
-     </div>
-    </div>
- 
-     
-                <!-- FOOTER -->
-<div id="pagefooter">
-<div class="map"> 
-  <div class="wrp">
-    <div class="map-box">
-    <p> 
-      Контактная информация <br> 
-      ------------------------- <br> 
-      Саранск, ул.Б.Хмельницкого, дом 33 <br>
-      (Дом быта) <br>
-      ------------------------- <br>
-      8-919-787-51-05 <br>
-      8-800-555-35-35 
-    </p>
+
+      <div class="frap frap-barright">
+
+        <h1 class="h2-bar"> Услуги <br> проводимые <br> на дому</h1>
+        <p><span class="bartext">На дому ветеринары оказывают все те же услуги, <br> что и в клинике.</span><br>
+          Исключениями являются только операции и исследования, <br>
+          требующие стационарного оборудования.</p>
+        <p><span class="bartext">Экстренная помощь.</span> Бригады скорой ветеринарной <br>
+          помощи и их транспорт оборудованы всем <br>
+          необходимым для оказания срочной помощи и <br>
+          реанимации.</p>
+        <p><span class="bartext">Диагностика и анализы.</span> Современное портативное <br>
+          оборудование сделало возможным проводить дома <br>
+          многие виды аппаратной диагностики - УЗИ, ЭКГ, <br>
+          рентген. Мы сотрудничаем с лучшими лабораториями. <br>
+          Ветврач произведет забор материалов, а результаты <br>
+          вы получите по электронной почте.</p>
+        <p><span class="bartext">Терапевтическое лечение.</span> Большинство проблем с <br>
+          животными могут быть решены с помощью <br>
+          медикаментов и процедур в домашних условиях. Так <br>
+          питомцы чувтсвуют себя в безопаности и не <br>
+          испытывают стресса. Если потребуется, на дом может <br>
+          выехать и узкий специалист: офтальмолог, дерматолог, <br>
+          кардиолог и т.д.</p>
+        <p><span class="bartext">Хирургия.</span> В домашних условиях, конечно, нет возможности <br>
+          проводить большинство операций, но наши доктора окажут <br>
+          вашему питомцу первую помощь при травмах; при <br>
+          необходимости подготовят его к транспортировке <br>
+          и доставят в стационар.
+        </p>
+      </div>
     </div>
   </div>
-</div>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae12070e335a6d1cc079b8622dfe0d21d26f42a3beab3fed950f1d6173e7d1ce9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-</div>
+  <!-- ICONS -->
 
-<div class="footer">
+  <div class="page-ics">
+    <div class="page-icons">
+      <img class="img-pig" src="img/pig.svg" alt="">
+      <p class="icon-title">Доступные <br> цены</p>
+    </div>
+    <div class="page-icons">
+      <img class="img-icon" src="img/chasi.svg" alt="">
+      <p class="icon-title">Обслуживание <br> 24 часа</p>
+    </div>
+    <div class="page-icons">
+      <img class="img-icon" src="img/vrach.svg" alt="">
+      <p class="icon-title">Персональный <br> врач </p>
+    </div>
+    <div class="page-icons">
+      <img class="img-icon" src="img/krest.svg" alt="">
+      <p class="icon-title">Новое <br> оборудование</p>
+    </div>
+    <div class="page-icon-gazel">
+      <img class="img-icon-gazel" src="img/gazel.svg" alt="">
+      <p class="icon-title-gazel">Выезд <br> на дом </p>
+    </div>
+  </div>
+
+
+  <!-- MAP -->
+  <div id="pagefooter">
+    <div class="map">
+      <div class="wrp">
+        <div class="map-box">
+          <p>
+            Контактная информация <br>
+            ------------------------- <br>
+            Саранск, ул.Б.Хмельницкого, дом 33 <br>
+            (Дом быта) <br>
+            ------------------------- <br>
+            8-919-787-51-05 <br>
+            8-800-555-35-35
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae12070e335a6d1cc079b8622dfe0d21d26f42a3beab3fed950f1d6173e7d1ce9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+  <!-- FOOTER -->
+  <div class="footer">
     <img class="lapka" src="img/whitelapka.svg" alt="">
-  <p>ZooHelp всегда придёт на помощь !</p>
-     <img class="lapka" src="img/whitelapka.svg" alt="">
-</div>
+    <p>ZooHelp всегда придёт на помощь !</p>
+    <img class="lapka" src="img/whitelapka.svg" alt="">
+  </div>
+  <!-- ПЛАВНЫЙ СКРОЛЛ ДО ЯКОРЯ -->
+  <script src="scripts/scroll.js"></script>
 
 </body>
 </html>
-
