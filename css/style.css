@@ -8,10 +8,14 @@ body {
   font-family: "Neucha", cursive;
 }
 
-.page-light {
+.max-width {
   background-color: #FFBE02;
+}
+
+.page-light {
+  max-width: 1700px;
+  margin: 0 auto 0 auto;
   height: 1000px;
-  box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
   background-image: url(../img/dog.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -101,7 +105,7 @@ body {
 }
 
 .left-menu {
-  margin-top: 81px;
+  margin-top: 150px;
 }
 
 .info-title {
@@ -377,14 +381,15 @@ body {
   width: 85%;
 }
 .text-up {
-  max-width: 1700px;
+  max-width: 1400px;
   text-align: center;
   font-size: 32px;
   text-transform: uppercase;
   margin-top: -20px;
+  margin-left: -40px;
 }
 .text-bottom {
-  max-width: 1700px;
+  max-width: 1400px;
   margin-top: 80px;
   text-align: center;
   font-size: 24px;

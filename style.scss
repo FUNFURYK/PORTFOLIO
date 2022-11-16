@@ -21,11 +21,34 @@ body {
   font-family: 'Neucha', cursive;
 }
 
+.max-width{
+  // max-width: 1700px;
+  // width: 100%;
+  background-color: $yellow;
+  // background-size: contain;
+  // width: 100%;
+  // background-image: url(../img/dog.png);
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // max-width: 1700px;
+  // width: 100%;
+  // margin: 0 auto 0 auto;
+  // display: flex;
+  // justify-content: center;
+
+}
+
 .page {
   &-light {
-    background-color: $yellow;
+    // background-color: $yellow;
+    max-width: 1700px;
+    margin: 0 auto 0 auto;
+    // display: flex;
     height: 1000px;
-    box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    // width: 100%;
+    // background-size: contain;
+    // box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    // justify-content: right;
     background-image: url(../img/dog.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -47,8 +70,15 @@ body {
     padding-top: 30px;
     margin: 0 auto;
   }
-
 }
+
+// .dogie{
+//     display: flex;
+//     justify-content: flex-start;
+//     padding-left: 120px;
+//     padding-top: 30px;
+//     margin: 0 auto;
+// }
 
 
 .wrapper {
@@ -160,7 +190,7 @@ body {
   // justify-content: center;
   // flex-direction: column;
   // max-width: 1700px;
-  margin-top: 81px;
+  margin-top: 150px;
   // margin: auto;
   // width: 80%;
 }
@@ -447,15 +477,16 @@ body {
   width: 85%;
 
   &-up {
-    max-width: 1700px;
+    max-width: 1400px;
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
     margin-top: -20px;
+    margin-left: -40px;
   }
 
   &-bottom {
-    max-width: 1700px;
+    max-width: 1400px;
     margin-top: 80px;
     text-align: center;
     font-size: 24px;
