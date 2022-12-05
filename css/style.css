@@ -13,16 +13,13 @@ body {
 }
 
 .page-light {
-  max-width: 1700px;
   margin: 0 auto 0 auto;
+  background-image: url(../img/fon1.png);
   height: 1000px;
-  background-image: url(../img/dog.png);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 .page-yellow {
   box-shadow: 0.4em 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-  background-color: #FFBE02;
+  background-color: #302828;
   background-size: contain;
   height: 250px;
   margin-top: 50px;
@@ -54,7 +51,8 @@ body {
   color: #F9F6F1;
   background-color: #F9F6F1;
   margin-right: 50px;
-  background-image: url(../img/catlogo.svg);
+  background-image: url(../img/logoM.png);
+  background-size: 35px;
   background-repeat: no-repeat;
   display: flex;
   flex: 5% 0 0%;
@@ -82,6 +80,11 @@ body {
 }
 .nav-item {
   margin-right: 30px;
+}
+
+.nav-footer {
+  text-decoration: none;
+  color: #000;
 }
 
 .nav-link {
@@ -210,9 +213,6 @@ body {
 }
 
 .ph2 {
-  background-image: url(../img/blacklapa.svg);
-  background-repeat: no-repeat;
-  background-position: 220px;
   text-align: center;
   font-size: 32px;
 }
@@ -264,11 +264,8 @@ body {
   border-radius: 30px;
   border: 1px solid black;
   text-decoration: none;
-  padding: 12px 70px;
+  padding: 12px 40px;
   color: #F9F6F1;
-  background-image: url(../img/lapka.svg);
-  background-repeat: no-repeat;
-  background-position: 260px;
   padding-left: 45px;
   text-shadow: 2px 2px 2px #000;
 }
@@ -287,12 +284,10 @@ body {
 }
 
 .poph1 {
-  background-image: url(../img/blacklapa.svg);
-  background-repeat: no-repeat;
   background-position: 310px;
   margin-top: -5px;
   padding-left: 0px;
-  margin-left: 40px;
+  margin-left: 130px;
 }
 
 .pop {
@@ -324,8 +319,8 @@ body {
 }
 
 .popup-content {
-  height: 520px;
-  width: 700px;
+  height: 450px;
+  width: 300px;
   align-items: center;
   border-radius: 7%;
   position: relative;
@@ -334,7 +329,7 @@ body {
   margin-left: 100px;
   padding-left: 40px;
   border: 1px solid black;
-  width: 40%;
+  width: 30%;
   -webkit-animation-name: animatetop;
           animation-name: animatetop;
   -webkit-animation-duration: 0.7s;
@@ -386,11 +381,12 @@ body {
   font-size: 32px;
   text-transform: uppercase;
   margin-top: -20px;
-  margin-left: -40px;
+  margin-left: -220px;
 }
 .text-bottom {
   max-width: 1400px;
   margin-top: 80px;
+  margin-left: 50px;
   text-align: center;
   font-size: 24px;
 }
@@ -399,7 +395,8 @@ body {
   box-shadow: 0px 15px 50px rgb(0, 0, 0);
   border-radius: 50%;
   display: flex;
-  height: 270px;
+  margin-left: 170px;
+  height: 400px;
 }
 
 .dog2 {
@@ -434,7 +431,7 @@ body {
 
 .informBlock {
   background-color: #F9F6F1;
-  border: 2px solid #212121;
+  border: 2px solid #302828;
   padding: 10px;
   transition: 1s;
   margin: 20px;
@@ -462,7 +459,7 @@ body {
 }
 
 .informBlock:hover {
-  background: #FFBE02;
+  background: #D7B399;
 }
 
 .informBlock:hover .underlineBlock {
@@ -470,33 +467,15 @@ body {
 }
 
 .class {
-  margin-top: 450px;
+  margin-top: 350px;
   display: flex;
   justify-content: center;
-}
-
-.frap {
-  display: inline-block;
-  max-width: 1700px;
-  box-shadow: 0 20px 10px #FFBE02;
-  justify-content: center;
-  align-items: center;
-  vertical-align: top;
-  padding-left: 20px;
-}
-.frap-barleft {
-  padding-right: 10px;
-  padding-bottom: 20px;
-}
-.frap-barright {
-  margin-left: 100px;
-  padding-right: 10px;
 }
 
 .h1-bar {
   margin-left: -20px;
   padding-left: 10px;
-  border-left: 6px solid #FFBE02;
+  border-left: 6px solid #302828;
   margin-top: -10px;
   color: #F9F6F1;
   text-shadow: 2px 2px 2px #000;
@@ -529,7 +508,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  background-color: #FFBE02;
+  background-color: #302828;
   background-size: contain;
   padding-bottom: 40px;
   height: 175px;
@@ -602,7 +581,7 @@ body {
   top: 80px;
   left: -130px;
   padding: 20px;
-  background: #FFBE02;
+  background: #302828;
   border: 1px solid #000000;
   z-index: 100;
   height: 300px;
@@ -626,7 +605,7 @@ body {
   box-shadow: inset 0 0 3px;
   position: static;
   height: 100px;
-  background-color: #FFBE02;
+  background-color: #302828;
   display: flex;
   justify-content: center;
 }
